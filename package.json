@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-mjtest",
+  "version": "1.1.0",
+  "description": "test cordova plugin",
+  "cordova": {
+    "id": "cordova-plugin-mjtest",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaxBalance/cordova-plugin-mjtest.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "taobao",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "zhangmingjia",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/MaxBalance/cordova-plugin-mjtest/issues"
+  },
+  "homepage": "https://github.com/MaxBalance/cordova-plugin-mjtest#readme"
+}

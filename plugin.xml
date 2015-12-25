@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-mjtest"
+    version="1.1.0">
+    <name>mjtest</name>
+    <description>Cordova mjtest Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,mjtest,cordova-ios,cordova-android</keywords>
+    <repo>https://github.com/MaxBalance/cordova-plugin-mjtest.git</repo>
+    <issue>https://github.com/MaxBalance/cordova-plugin-mjtest/issues</issue>
+
+    <js-module src="www/mjtest.js" name="mjtest">
+        <clobbers target="window.plugins.mjtest" />
+    </js-module>
+
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Mjtest" >
+                <param name="android-package" value="org.apache.cordova.mjtest.Mjtest"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Mjtest.java" target-dir="src/org/apache/cordova/mjtest" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Mjtest">
+                <param name="ios-package" value="Mjtest"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/Mjtest.h" />
+        <source-file src="src/ios/Mjtest.m" />
+    </platform>
+
+</plugin>
